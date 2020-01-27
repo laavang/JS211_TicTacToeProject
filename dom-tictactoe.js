@@ -32,7 +32,7 @@ const handleClick = (element) => {
 const addMarker = (id) => {
   console.log(`We'll place a mark on square: ${id}`);
   
-  document.getElementById(element.id).innerHTML = currentMarker;
+  document.getElementById(id).innerHTML = currentMarker;
   
   // @TODO, Mix & Match. 
   // You will need the following pieces:
@@ -159,9 +159,9 @@ const resetBoard = () => {
   
   // @TODO, Your code here: make sure to reset the array of arrays to empty for a new game
 
-  for (let i=0; i < board.length; i++) {
-    for (let n=0, n < board[i].length, n++) {
-      board[i][n]= "";
+  for (let a=0; a < board.length; a++) {
+    for (let b=0; b < board[a].length; b++) {
+      board[a][b]= "";
     }
   }
 
